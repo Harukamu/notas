@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño de los elementos */
+  }
+  
+  /* Fondo general de la página */
+  body {
+    font-family: Arial, sans-serif; /* Fuente legible */
+    background-color: #b5c0ff; /* Color de fondo suave */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    padding: 0 10px; /* Espacio a los lados */
+  }
+  
+  /* Contenedor principal de la aplicación */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de este contenedor */
+    justify-content: flex-start; /* Alinea los elementos en la parte superior */
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo de la aplicación */
+    margin-top: 20px; /* Espacio arriba de la aplicación */
+  }
+  
+  /* Estilo de la cuadrícula que contiene las tarjetas */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-items: center; /* Centra las tarjetas dentro de cada celda */
+    margin-top: 20px; /* Espacio arriba de la cuadrícula */
+    width: 100%;
+  }
+  
+  /* Responsividad para pantallas pequeñas (menos de 768px) */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+  }
