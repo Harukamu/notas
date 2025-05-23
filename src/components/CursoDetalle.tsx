@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Curso } from "../declarations/type";
-import "./Card.css"
-
 
 interface Props {
   cursos: Curso[];
