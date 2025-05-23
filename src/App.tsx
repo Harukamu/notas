@@ -3,7 +3,7 @@ import { Curso } from "./declarations/type";
 import CursoCard from "./components/CursoCard";
 import CursoDetalle from "./components/CursoDetalle";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import './styles/global.css'
+import './global.css'
 
   
 const App: React.FC = () => {
